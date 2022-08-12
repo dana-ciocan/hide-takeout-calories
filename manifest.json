@@ -1,0 +1,12 @@
+{
+  "name": "Hide calories on popular UK takeout websites",
+  "version": "1.0",
+  "description": "For people recovering from EDs who don't want to see calories everywhere. Works on Deliveroo and Uber Eats",
+  "content_scripts": [
+    {
+      "matches": ["https://deliveroo.co.uk/*", "https://*.ubereats.com/*"],
+      "js": ["remove-cals.js"]
+    }
+  ],
+  "manifest_version": 3
+}
